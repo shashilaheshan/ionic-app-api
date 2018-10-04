@@ -12,6 +12,8 @@ import {PromotionPage} from '../pages/promotion/promotion';
 import { HttpModule } from '@angular/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {RegisterPage} from '../pages/register/register';
+import  {ShowApiDatasPage} from '../pages/show-api-datas/show-api-datas';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     RedditPage,
     SettingsPage,
-    PromotionPage
+    PromotionPage,
+    RegisterPage,
+      ShowApiDatasPage
   ],
   imports: [
     HttpModule,
@@ -35,12 +39,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RedditPage,
     SettingsPage,
     TabsPage,
-    PromotionPage
+    PromotionPage,
+    RegisterPage,
+      ShowApiDatasPage
   ],
   providers: [
-  
     RedditService,
-     SibService,
+    SibService,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

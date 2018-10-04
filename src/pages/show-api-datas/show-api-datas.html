@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ShowApiDatasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ShowApiDatas</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Company</ion-label>
+      <ion-select [(ngModel)]="companys">
+        <ion-option *ngFor="let cm of companies" value="{{cm}}">{{cm}}</ion-option>
+
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-label>Vehicle Types</ion-label>
+      <ion-select [(ngModel)]="vehtype">
+        <ion-option *ngFor="let vh of vehtypes" value="{{vh}}">{{vh}}</ion-option>
+
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="primary" (click)="GetVals()">Get Vals</button>
+</ion-content>

@@ -7,8 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
+  myDate="";
   constructor(public navCtrl: NavController) {
+  
+  }
 
+  Alert(){
+
+    console.log(this.myDate);
   }
 
 }

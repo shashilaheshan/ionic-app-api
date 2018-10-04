@@ -13,10 +13,17 @@
 </ion-header>
 
 
-<ion-content padding>
-<ion-list>
+
+
+
+<ion-content padding class="masters">
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+<ion-list >
     <ion-item *ngFor='let item of items'>
-        <ion-card>
+        <ion-card class="masters">
                  
       <ion-thumbnail *ngIf="item.data.thumbnail" >
           <img src="{{item.data.thumbnail}}"/>

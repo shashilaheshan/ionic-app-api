@@ -9,7 +9,7 @@
   "proxies": [
     {
       "path": "/api",
-      "proxyUrl": "https://www.samsoninsurance.lk/api/"
+      "proxyUrl": "https://sibapp.000webhostapp.com/api"
     }
   ]
   
